@@ -9,8 +9,8 @@ This project demonstrates how to manage two collections: **Employees** and **Stu
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
-cd <your-project-folder>
+git clone https://github.com/Advaithdp02/NODE_EXPRESS_CRUD.git
+cd <your choice repo>
 ```
 ### 2. Install Dependencies
 ```bash

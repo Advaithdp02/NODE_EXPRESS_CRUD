@@ -1,0 +1,29 @@
+extends layout
+
+block content
+  h2 Edit Employee Record
+  form(action=`/update/${employee._id}`, method="POST")
+    label E_ID:
+    input(type="number", name="E_ID", value=employee.E_ID, required)
+    br
+    label E_NAME:
+    input(type="text", name="E_NAME", value=employee.E_NAME, required)
+    br
+    label E_EMAIL:
+    input(type="email", name="E_EMAIL", value=employee.E_EMAIL, required)
+    br
+    label E_PHONE:
+    input(type="number", name="E_PHONE", value=employee.E_PHONE, required)
+    br
+    label E_GENDER:
+    select(name="E_GENDER", required)
+      option(value="Male", selected=employee.E_GENDER === "Male") Male
+      option(value="Female", selected=employee.E_GENDER === "Female") Female
+    br
+    label E_DEPT:
+    input(type="text", name="E_DEPT", value=employee.E_DEPT, required)
+    br
+    label E_LOCATION:
+    input(type="text", name="E_LOCATION", value=employee.E_LOCATION, required)
+    br
+    button(type="submit") Update

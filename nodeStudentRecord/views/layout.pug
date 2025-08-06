@@ -1,0 +1,19 @@
+doctype html
+html
+  head
+    title Student App
+    link(rel="stylesheet", href="/style.css")
+  body
+    header
+      h1 Student Management
+      nav
+        a(href="/") Home
+        a(href="/new") Add Student
+        a(href="/sort") Sort Students
+        select(name="selct", onchange="location.href=this.value")
+          option(value="") Select Department
+          option(value="/filter/CSE") CSE
+          option(value="/filter/MECH") MECH
+          option(value="/filter/ISE") ISE
+          option(value="/filter/ECE") ECE
+    block content
